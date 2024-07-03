@@ -1,0 +1,77 @@
+:root {
+  --first-color: #defffc;
+  --second-color: #e2e4f6;
+  --third-color: #e7c8dd;
+  --fourth-color: #dbafc1;
+  --fifth-color: #86626e;
+}
+
+.userform {
+  background-color: #86626ea4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  transition: transform 0.5s;
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userform.active {
+  transform: scale(1);
+  transition: transform 0.5s;
+}
+
+.userform__form {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: var(--second-color);
+  color: var(--fifth-color);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.userform__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.userform__closebtn {
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 0.3;
+  border-radius: 10px;
+  border: none;
+}
+
+.userform__closebtn:hover {
+  opacity: 1;
+}
+
+.userform__item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.userform__btn {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  background-color: var(--fourth-color);
+  border-radius: 10px;
+  transition: transform 0.5s;
+}
+
+.userform__btn:hover {
+  background-color: var(--third-color);
+  transform: scale(1.05);
+  transition: transform 0.5s;
+}

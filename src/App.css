@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --first-color: #defffc;
+  --second-color: #e2e4f6;
+  --third-color: #e7c8dd;
+  --fourth-color: #dbafc1;
+  --fifth-color: #86626e;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffff;
+  color: var(--fifth-color);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+input,
+button {
+  display: inline-block;
+  cursor: pointer;
+  font-family: inherit;
+  text-align: center;
+}
+
+input {
+  padding: 8px;
+  border-color: var(--fourth-color);
+  border-radius: 7px;
+  color: #86626ee6;
+}
+
+.app__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.app__btn {
+  padding: 10px 20px;
+  width: 300px;
+  border: none;
+  background-color: var(--fourth-color);
+  border-radius: 5px;
+}
+
+.app__container {
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+}
